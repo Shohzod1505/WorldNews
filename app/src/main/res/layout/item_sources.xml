@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingTop="12dp"
+    android:paddingBottom="36dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="24dp"
+    android:background="?android:selectableItemBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:shapeAppearanceOverlay="@style/roundedImageView"
+        tools:src="@drawable/logo_thenewyorktimes"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_sources"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="24dp"
+        style="@style/SourcesTitle"
+        tools:text="The New York Times"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_logo"
+        app:layout_constraintStart_toEndOf="@+id/iv_logo"/>
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        tools:text="General | USA"
+        style="@style/SourcesText"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_sources"
+        app:layout_constraintTop_toBottomOf="@id/tv_sources" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

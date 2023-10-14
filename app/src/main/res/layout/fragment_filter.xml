@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip_popular"
+        style="@style/Style.Chip.Category"
+        android:textAppearance="@style/TabText"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="@string/chip_popular"
+        app:checkedIconEnabled="true"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/chip_new"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Chip.Left.Rounded" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip_new"
+        style="@style/Style.Chip.Category"
+        android:textAppearance="@style/TabText"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:text="@string/chip_new"
+        app:checkedIconEnabled="true"
+        app:layout_constraintStart_toEndOf="@+id/chip_popular"
+        app:layout_constraintEnd_toStartOf="@id/chip_relevant"
+        app:layout_constraintTop_toTopOf="@+id/chip_popular"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Chip.Rectangle" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chip_relevant"
+        style="@style/Style.Chip.Category"
+        android:textAppearance="@style/TabText"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:layout_marginEnd="16dp"
+        android:text="@string/chip_relevant"
+        app:checkedIconEnabled="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/chip_new"
+        app:layout_constraintTop_toTopOf="@+id/chip_popular"
+        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Chip.Right.Rounded" />
+
+    <ImageButton
+        android:id="@id/iv_calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="4dp"
+        android:padding="8dp"
+        android:background="@drawable/date_selector"
+        android:clickable="true"
+        android:src="@drawable/icon_calendar_normal"
+        app:layout_constraintEnd_toEndOf="@id/chip_relevant"
+        app:layout_constraintTop_toBottomOf="@id/chip_relevant"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/filter_date"
+        style="@style/FilterText"
+        app:layout_constraintStart_toStartOf="@+id/chip_popular"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_calendar"
+        app:layout_constraintTop_toTopOf="@+id/iv_calendar" />
+
+    <TextView
+        android:id="@+id/tv_choose_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/filter_calendar"
+        android:layout_marginEnd="4dp"
+        style="@style/FilterText"
+        android:textColor="@color/M3_sys_light_outline"
+        app:layout_constraintEnd_toStartOf="@id/iv_calendar"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_calendar"
+        app:layout_constraintTop_toTopOf="@+id/iv_calendar" />
+
+    <TextView
+        android:id="@+id/tv_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/filter_language"
+        style="@style/FilterText"
+        app:layout_constraintStart_toStartOf="@+id/tv_date"
+        app:layout_constraintTop_toBottomOf="@+id/iv_calendar"/>
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:chipSpacingHorizontal="4dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_language"
+        app:layout_constraintTop_toBottomOf="@+id/tv_language"
+        app:singleSelection="true">
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_russian"
+            style="@style/Style.Chip.Language"
+            android:textAppearance="@style/TabText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chip_language_russian" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_english"
+            style="@style/Style.Chip.Language"
+            android:textAppearance="@style/TabText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chip_language_english" />
+
+        <com.google.android.material.chip.Chip
+            android:id="@+id/chip_deutsch"
+            style="@style/Style.Chip.Language"
+            android:textAppearance="@style/TabText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/chip_language_deutsch" />
+
+    </com.google.android.material.chip.ChipGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="M3_label_small">11sp</dimen>
+    <dimen name="M3_label_medium">12sp</dimen>
+    <dimen name="M3_label_large">14sp</dimen>
+
+    <dimen name="M3_body_medium">14sp</dimen>
+    <dimen name="M3_body_large">16sp</dimen>
+
+    <dimen name="M3_title_small">14sp</dimen>
+    <dimen name="M3_title_medium">16sp</dimen>
+    <dimen name="M3_title_large">22sp</dimen>
+
+    <dimen name="M3_headline_large">32sp</dimen>
+</resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp"
+    android:background="?android:selectableItemBackground"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="114dp"
+        android:layout_height="64dp"
+        android:src="@drawable/thumbnail"
+        android:scaleType="fitXY"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/monogram"
+        android:scaleType="fitXY"
+        android:layout_marginStart="16dp"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintTop_toTopOf="@+id/iv_photo"
+        app:layout_constraintBottom_toBottomOf="@id/iv_photo"
+        app:layout_constraintStart_toEndOf="@+id/iv_photo"/>
+
+    <TextView
+        android:id="@+id/tv_sources"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        style="@style/NewsTitle"
+        android:text="The New York Times"
+        app:layout_constraintTop_toTopOf="@+id/iv_logo"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_logo"
+        app:layout_constraintStart_toEndOf="@id/iv_logo"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        style="@style/NewsText"
+        android:text="@string/lorem"
+        app:layout_constraintTop_toBottomOf="@id/iv_logo"
+        app:layout_constraintBottom_toBottomOf="@id/iv_photo"
+        app:layout_constraintStart_toStartOf="@+id/iv_logo"
+        app:layout_constraintEnd_toEndOf="@+id/tv_sources" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

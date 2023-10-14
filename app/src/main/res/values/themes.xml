@@ -1,0 +1,194 @@
+<resources>
+
+    <style name="Base.Theme.WorldNews" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/M3_ref_primary_primary60</item>
+        <item name="android:navigationBarColor">@color/M3_ref_primary_primary60</item>
+        <item name="android:windowBackground">@color/M3_sys_light_surface</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
+    </style>
+
+    <style name="Theme.WorldNews" parent="Base.Theme.WorldNews" />
+
+
+    <!-- Style for Progress Bar -->
+
+    <style name="ProgressBar" parent="Widget.Material3.CircularProgressIndicator">
+        <item name="indicatorColor">#f00</item>
+    </style>
+
+    <!-- Style for Proggres Bar -->
+
+    <!-- Style for BottomNavigation -->
+
+    <style name="Widget.App.BottomNavigationView" parent="Widget.Material3.BottomNavigationView">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.BottomNavigationView</item>
+        <item name="labelVisibilityMode">selected</item>
+        <item name="itemIconTint">@color/M3_white</item>
+        <item name="itemTextColor">@color/M3_white</item>
+        <item name="android:background">@color/M3_ref_primary_primary60</item>
+    </style>
+
+    <style name="ThemeOverlay.App.BottomNavigationView" parent="">
+        <item name="colorSecondaryContainer">@color/M3_ref_primary_primary50</item>
+    </style>
+
+    <!-- Style for BottomNavigation -->
+
+    <!-- Style for Chips -->
+
+    <style name="ShapeAppearanceOverlay.Chip.Left.Rounded" parent="">
+        <item name="cornerSizeTopLeft">20dp</item>
+        <item name="cornerSizeBottomLeft">20dp</item>
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.Chip.Right.Rounded" parent="">
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeTopRight">20dp</item>
+        <item name="cornerSizeBottomRight">20dp</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.Chip.Rectangle" parent="">
+        <item name="cornerSizeTopLeft">0dp</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeTopRight">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
+    </style>
+
+    <style name="Style.Chip.Language" parent="">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColor">@color/M3_sys_light_on_surface</item>
+        <item name="android:checkable">true</item>
+        <item name="chipBackgroundColor">@color/chip_selector</item>
+    </style>
+
+    <style name="Style.Chip.Category" parent="Style.Chip.Language">
+        <item name="checkedIcon">@drawable/icon_check</item>
+        <item name="chipStrokeColor">@color/M3_sys_light_outline</item>
+        <item name="chipStrokeWidth">1dp</item>
+    </style>
+
+    <!-- Style for Chips -->
+
+
+
+    <!-- Style for Calendar -->
+
+    <style name="DatePicker" parent="ThemeOverlay.Material3.MaterialCalendar">
+        <item name="colorPrimary">@color/M3_sys_light_primary</item>
+        <item name="colorSurfaceVariant">@color/M3_sys_light_secondary_container</item>
+        <item name="materialCalendarHeaderDivider">@style/DatePicker.Divider</item>
+        <item name="materialCalendarHeaderToggleButton">@style/DatePicker.InputTypeIcon</item>
+        <item name="android:background">@color/M3_sys_light_background</item>
+    </style>
+
+    <style name="DatePicker.InputTypeIcon" parent="Widget.Material3.MaterialCalendar.HeaderToggleButton">
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="DatePicker.Divider" parent="Widget.Material3.MaterialCalendar.HeaderDivider">
+        <item name="android:visibility">visible</item>
+        <item name="android:background">@color/M3_sys_light_outline_variant</item>
+    </style>
+
+    <!-- Style for Calendar -->
+
+    <!-- Style for TextView -->
+
+    <!-- Style for Tab -->
+
+    <style name="TabText">
+        <item name="android:textColor">@color/M3_sys_light_on_surface_variant</item>
+        <item name="android:textSize">@dimen/M3_body_medium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Style for Tab -->
+
+    <!-- Style for Sources -->
+
+    <style name="SourcesTitle">
+        <item name="android:textColor">@color/M3_sys_light_on_surface</item>
+        <item name="android:textSize">@dimen/M3_body_large</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SourcesText">
+        <item name="android:textColor">@color/M3_sys_light_on_surface_variant</item>
+        <item name="android:textSize">@dimen/M3_body_medium</item>
+    </style>
+
+    <!-- Style for Sources -->
+
+    <!-- Style for News -->
+
+    <style name="NewsTitle">
+        <item name="android:textColor">@color/M3_sys_light_on_surface</item>
+        <item name="android:textSize">@dimen/M3_label_small</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="NewsText">
+        <item name="android:textColor">@color/M3_sys_light_on_surface</item>
+        <item name="android:textSize">@dimen/M3_body_medium</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <!-- Style for News -->
+
+    <!-- Style for Filter -->
+
+    <style name="FilterText">
+        <item name="android:textColor">@color/M3_sys_light_on_surface</item>
+        <item name="android:textSize">@dimen/M3_label_small</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Style for Filter -->
+
+    <!-- Style for Error -->
+
+    <style name="ErrorText">
+        <item name="android:textColor">@color/M3_sys_light_on_surface</item>
+        <item name="android:textSize">@dimen/M3_title_medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    <!-- Style for Error -->
+
+
+    <!-- Style for Detail -->
+
+    <style name="DetailBase">
+        <item name="android:textColor">@color/M3_sys_light_on_surface</item>
+        <item name="android:textSize">@dimen/M3_body_large</item>
+    </style>
+
+    <style name="DetailInfo">
+        <item name="android:textColor">@color/M3_sys_light_on_surface_variant</item>
+        <item name="android:textSize">@dimen/M3_body_medium</item>
+    </style>
+
+    <!-- Style for Detail -->
+
+    <!-- Style for TextView -->
+
+    <!-- Style for ImageView -->
+
+    <style name="roundedImageView" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+        <item name="color">@color/M3_white</item>
+    </style>
+
+    <!-- Style for ImageView -->
+
+
+
+
+</resources>
