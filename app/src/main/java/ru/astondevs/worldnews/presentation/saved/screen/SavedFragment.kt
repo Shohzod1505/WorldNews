@@ -26,6 +26,8 @@ import ru.astondevs.worldnews.databinding.FragmentSavedBinding
 import ru.astondevs.worldnews.presentation.common.adapter.NewsItem
 import ru.astondevs.worldnews.presentation.common.adapter.NewsActionListener
 import ru.astondevs.worldnews.presentation.common.adapter.NewsAdapter
+
+
 import ru.astondevs.worldnews.presentation.common.adapter.toListAdapterArticle
 import ru.astondevs.worldnews.presentation.common.detail.DetailFragmentNavigationListener
 import ru.astondevs.worldnews.presentation.saved.viewmodel.SavedViewModel
@@ -53,6 +55,8 @@ class SavedFragment : DaggerFragment(R.layout.fragment_saved) {
     private var preferences: SharedPreferences? = null
     private var filter: String? = null
     private var language: String? = null
+
+
     private var startDate: String? = null
     private var endDate: String? = null
 
